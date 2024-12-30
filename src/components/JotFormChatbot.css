@@ -1,0 +1,56 @@
+/* src/components/JotFormChatbot.css */
+
+/* Base styles for the chatbot container */
+.jotform-chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensure it appears above other content */
+  width: 300px; /* Default width */
+  max-width: 80vw; /* Ensure it doesn't exceed viewport width */
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+  .jotform-chatbot-container {
+    width: 250px; /* Slightly smaller on tablets */
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/* Adjustments for small mobile devices */
+@media (max-width: 480px) {
+  .jotform-chatbot-container {
+    width: 90vw; /* Nearly full width on small screens */
+    right: 5vw;
+    bottom: 10px;
+  }
+}
+
+/* Optional: Styling the chatbot iframe or embedded elements */
+#JotformAgent-0194179f63c07ac8a86654ae974634a6870d {
+  width: 100%;
+  height: 100%;
+}
+
+/* Optional: Customize the chat button if accessible */
+.jotform-chatbot-container .chat-button {
+  width: 60px;
+  height: 60px;
+}
+
+/* Ensure the chat button scales appropriately */
+@media (max-width: 768px) {
+  .jotform-chatbot-container .chat-button {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jotform-chatbot-container .chat-button {
+    width: 45px;
+    height: 45px;
+  }
+}
